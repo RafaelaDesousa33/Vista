@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VISTA. | Imóveis com personalidade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE PROGRESSO -->
+    <div class="progress-bar" id="progressBar"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            VISTA<span>.</span>
+        </a>
+
+
+        <nav class="nav" id="nav">
+
+            <a href="#colecoes">Coleções</a>
+            <a href="#semana">Destaque</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button class="favorites-top">
+                <i class="fa-regular fa-heart"></i>
+                <span id="favoriteCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    IMÓVEIS COM PERSONALIDADE
+                </span>
+
+                <h1>
+                    Que tipo de lugar
+                    <em>combina</em>
+                    com a sua história?
+                </h1>
+
+                <p>
+                    Alguns lugares são apenas endereços.
+                    Outros fazem parte da nossa vida.
+                </p>
+
+                <a href="#colecoes" class="hero-button">
+                    EXPLORAR LUGARES
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+
+            <div class="hero-images">
+
+                <div class="hero-img image-main">
+
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+                        alt="Casa moderna">
+
+                </div>
+
+
+                <div class="hero-img image-small">
+
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=85"
+                        alt="Interior moderno">
+
+                </div>
+
+
+                <div class="hero-note">
+
+                    <span>EDIÇÃO</span>
+
+                    <strong>
+                        01 / 2026
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRASE -->
+
+        <section class="statement">
+
+            <p>
+                Não vendemos apenas metros quadrados.
+            </p>
+
+            <h2>
+                Ajudamos você a encontrar
+                um lugar que faça sentido
+                para o seu momento.
+            </h2>
+
+        </section>
+
+
+        <!-- BUSCA -->
+
+        <section class="search-section">
+
+            <div class="search-title">
+
+                <span>ENCONTRE</span>
+
+                <h2>
+                    Por onde
+                    começamos?
+                </h2>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" id="searchInput" placeholder="Digite um bairro, cidade ou imóvel...">
+
+                <button id="searchButton">
+                    BUSCAR
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLEÇÕES -->
+
+        <section class="collections" id="colecoes">
+
+            <div class="section-top">
+
+                <div>
+
+                    <span>01 — COLEÇÕES</span>
+
+                    <h2>
+                        Escolha um
+                        universo.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Cada coleção reúne imóveis
+                    para diferentes estilos de vida.
+                </p>
+
+            </div>
+
+
+            <div class="collection-menu">
+
+                <button class="collection-filter active" data-filter="todos">
+                    Todos
+                </button>
+
+                <button class="collection-filter" data-filter="cidade">
+                    Cidade
+                </button>
+
+                <button class="collection-filter" data-filter="refugio">
+                    Refúgio
+                </button>
+
+                <button class="collection-filter" data-filter="espaco">
+                    Espaço
+                </button>
+
+                <button class="collection-filter" data-filter="exclusivo">
+                    Exclusivos
+                </button>
+
+            </div>
+
+
+            <!-- LISTA DE IMÓVEIS -->
+
+            <div class="property-grid">
+
+
+                <!-- CARD 1 -->
+
+                <article class="property-card large" data-category="cidade"
+                    data-search="apartamento aurora vila madalena são paulo cidade">
+
+                    <div class="property-image">
+
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                            alt="Apartamento Aurora">
+
+                        <span class="collection-tag">
+                            CIDADE
+                        </span>
+
+                        <button class="favorite-btn" data-name="Apartamento Aurora">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="property-content">
+
+                        <div>
+
+                            <span>
+                                VILA MADALENA — SP
+                            </span>
+
+                            <h3>
+                                Apartamento Aurora
+                            </h3>
+
+                        </div>
+
+                        <button class="details-btn" data-id="1">
+
+                            VER IMÓVEL
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+
+                <article class="property-card" data-category="refugio"
+                    data-search="casa bosque granja viana cotia refugio">
+
+                    <div class="property-image">
+
+                        <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=1200&q=85"
+                            alt="Casa Bosque">
+
+                        <span class="collection-tag">
+                            REFÚGIO
+                        </span>
+
+                        <button class="favorite-btn" data-name="Casa Bosque">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="property-content">
+
+                        <div>
+
+                            <span>
+                                GRANJA VIANA — SP
+                            </span>
+
+                            <h3>
+                                Casa Bosque
+                            </h3>
+
+                        </div>
+
+                        <button class="details-btn" data-id="2">
+
+                            VER IMÓVEL
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+
+                <article class="property-card" data-category="espaco"
+                    data-search="casa jardim alto de pinheiros são paulo familia espaço">
+
+                    <div class="property-image">
+
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+                            alt="Casa Jardim">
+
+                        <span class="collection-tag">
+                            ESPAÇO
+                        </span>
+
+                        <button class="favorite-btn" data-name="Casa Jardim">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="property-content">
+
+                        <div>
+
+                            <span>
+                                ALTO DE PINHEIROS — SP
+                            </span>
+
+                            <h3>
+                                Casa Jardim
+                            </h3>
+
+                        </div>
+
+                        <button class="details-btn" data-id="3">
+
+                            VER IMÓVEL
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 4 -->
+
+                <article class="property-card large" data-category="exclusivo"
+                    data-search="residencia horizonte morumbi são paulo exclusivo luxo">
+
+                    <div class="property-image">
+
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+                            alt="Residência Horizonte">
+
+                        <span class="collection-tag">
+                            EXCLUSIVO
+                        </span>
+
+                        <button class="favorite-btn" data-name="Residência Horizonte">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="property-content">
+
+                        <div>
+
+                            <span>
+                                MORUMBI — SP
+                            </span>
+
+                            <h3>
+                                Residência Horizonte
+                            </h3>
+
+                        </div>
+
+                        <button class="details-btn" data-id="4">
+
+                            VER IMÓVEL
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="no-results" id="noResults">
+                Nenhum imóvel encontrado.
+            </p>
+
+        </section>
+
+
+        <!-- IMÓVEL DA SEMANA -->
+
+        <section class="property-week" id="semana">
+
+            <div class="week-image">
+
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85"
+                    alt="Imóvel da semana">
+
+            </div>
+
+
+            <div class="week-content">
+
+                <span>
+                    ★ IMÓVEL DA SEMANA
+                </span>
+
+                <h2>
+                    Um lugar
+                    para desacelerar.
+                </h2>
+
+                <p>
+                    Luz natural, espaços amplos e uma arquitetura
+                    pensada para transformar a rotina em algo mais leve.
+                </p>
+
+                <div class="week-info">
+
+                    <div>
+                        <strong>245</strong>
+                        <span>m²</span>
+                    </div>
+
+                    <div>
+                        <strong>3</strong>
+                        <span>QUARTOS</span>
+                    </div>
+
+                    <div>
+                        <strong>2</strong>
+                        <span>VAGAS</span>
+                    </div>
+
+                </div>
+
+                <button class="week-button details-btn" data-id="5">
+
+                    CONHECER ESTE LUGAR
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="about" id="sobre">
+
+            <div class="about-number">
+                02
+            </div>
+
+            <div class="about-content">
+
+                <span>
+                    SOBRE A VISTA.
+                </span>
+
+                <h2>
+                    Acreditamos que encontrar
+                    um imóvel deveria ser uma
+                    experiência mais humana.
+                </h2>
+
+                <p>
+                    Por isso selecionamos lugares com personalidade,
+                    história e potencial para fazer parte da sua.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contact" id="contato">
+
+            <div class="contact-content">
+
+                <span>
+                    03 — VAMOS CONVERSAR
+                </span>
+
+                <h2>
+                    Talvez o seu próximo
+                    lugar esteja aqui.
+                </h2>
+
+            </div>
+
+            <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-button">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                CONVERSAR NO WHATSAPP
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <a href="#" class="logo">
+            VISTA<span>.</span>
+        </a>
+
+        <p>
+            © 2026 VISTA. Imóveis com personalidade.
+        </p>
+
+        <div>
+
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
